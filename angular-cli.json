@@ -18,9 +18,21 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "styles.css"
+        "./assets/css/bootstrap/css/bootstrap.min.css",
+        "./assets/css/swiper/swiper.css",
+        "./assets/css/sweetalert/sweetalert.css",
+        "./assets/css/iCheck/custom.css",
+        "./assets/css/datetimepicker/bootstrap-datetimepicker.min.css",
+        "styles.scss"
       ],
-      "scripts": [],
+      "scripts": [
+        "./assets/js/jquery-2.1.1.js",
+        "./assets/js/swiper/swiper.js",
+        "./assets/js/sweetalert/sweetalert.min.js",
+        "./assets/js/iCheck/icheck.min.js",
+        "./assets/js/datetimepicker/bootstrap-datetimepicker.js",
+        "./assets/js/datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js"
+      ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
@@ -41,7 +53,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "scss",
     "prefixInterfaces": false,
     "inline": {
       "style": false,

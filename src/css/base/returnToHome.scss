@@ -1,0 +1,12 @@
+.returnToHome{
+  width:remSize(80);
+  height:remSize(80);
+  line-height:remSize(80);
+  font-size: remSize(50);
+  display: block;
+  position: fixed;
+  background-color: rgba(0,0,0,0.6);
+  bottom:remSize(30);
+  right:remSize(30);
+  text-align: center;
+}
