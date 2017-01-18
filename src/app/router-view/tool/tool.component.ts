@@ -151,7 +151,6 @@ export class ToolComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.initSubmitObj();
-    console.log(this.submitArr)
     $('input').iCheck({
       checkboxClass: 'icheckbox_square-green',
       radioClass: 'iradio_square-green'
