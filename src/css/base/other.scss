@@ -7,3 +7,20 @@
     width: 0;
   }
 }
+
+.wapper {
+  @extend .margin-width-auto;
+  width: 16rem;
+  box-sizing: border-box;
+}
+
+//.title {
+//  height: remSize(30);
+//  line-height: remSize(30);
+//  border-left: 2px solid map_get($baseColorMap, 'green');
+//  padding-left: remSize(10);
+//}
+
+.cursor-pointer {
+  cursor: pointer;
+}

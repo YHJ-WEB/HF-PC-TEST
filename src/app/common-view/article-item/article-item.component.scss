@@ -1,0 +1,19 @@
+@import "../../../css/HFPCMainCss";
+
+.article-width {
+  width: remSize(585);
+  .article-img {
+    width: remSize(365);
+    height: remSize(150);
+  }
+  .article-detail {
+    width: 2.5rem;
+  }
+}
+li {
+  list-style: disc;
+  cursor: pointer;
+}
+li:hover {
+  color: map_get($fontColorMap, 'green');
+}

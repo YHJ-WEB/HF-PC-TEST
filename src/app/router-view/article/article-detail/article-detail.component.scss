@@ -1,0 +1,20 @@
+@import "../../../../css/HFPCMainCss";
+
+.article-detail-img1-width {
+  width: 12rem;
+}
+.article-detail-img2-width {
+  width: 8rem;
+}
+img {
+  vertical-align: middle;
+}
+
+li {
+  list-style: disc;
+  line-height: 1.6 !important;
+}
+li:hover {
+  color: map_get($fontColorMap, 'green');
+  cursor: pointer;
+}

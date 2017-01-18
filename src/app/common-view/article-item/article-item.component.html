@@ -1,0 +1,13 @@
+<div class="article-width clear-float margin-bottom-sm">
+    <div class="">
+        <img src="{{articleItem.img}}" class="article-img float-left">
+        <div class="float-left article-detail margin-left-sm">
+            <h4>{{articleItem.title}}</h4>
+            <ul class="">
+                <li class="h5 margin-left-sm margin-top-xs" *ngFor="let item of articleItem.items" routerLinkActive="active" (click)="routeToLink(item)">
+                    {{item.title}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

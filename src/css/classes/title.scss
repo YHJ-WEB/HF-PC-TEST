@@ -1,25 +1,24 @@
 @charset "utf-8";
-.title {
-  @extend .padding-md, .overflow-line-1, .h3, .border-color-global-base;
+.title2 {
+  @extend .overflow-line-1, .h3, .border-color-global-base;
   color: map_get($fontColorMap, base) !important;
   display: block;
-  line-height: remSize(30);
+  line-height: remSize(20);
   position: relative;
-  padding-left: map_get($paddingSizeMap,'md')*2;
-  border-bottom: 1px solid;
+  padding-left: map_get($paddingSizeMap,'sm');
   &:before {
     position: absolute;
-    left: map_get($paddingSizeMap, 'md');
+    left: 0px;
     width: 2px;
     background-color: $mainColor;
     content: ' ';
-    height: remSize(30);
+    height: remSize(20);
     display: block;
     @extend .margin-right-sm;
   }
 }
 
-.title.more {
+.title2.more {
   &:after {
     content: '更多\e600';
     font-family: projectIcon;
@@ -27,7 +26,7 @@
     @extend .h5, .font-color-global-lightest;
   }
 }
-.title.all {
+.title2.all {
   &:after {
     content: '查看全部\e600';
     font-family: projectIcon;
