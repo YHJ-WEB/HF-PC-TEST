@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEE,wCAAe;EACb,MAAM,EAAE,WAAW",
+"sources": ["serviceContentComponent.scss"],
+"names": [],
+"file": "serviceContentComponent.css"
+}

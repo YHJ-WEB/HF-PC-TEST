@@ -4,6 +4,9 @@ import {ArticleListComponent} from './router-view/article/article-list/article-l
 import {ArticleDetailComponent} from './router-view/article/article-detail/article-detail.component';
 import {ArticleComponent} from './router-view/article/article.component';
 import {ToolComponent} from './router-view/tool/tool.component';
+import {BookingServiceComponent} from './router-view/booking-service/booking-service.component';
+import {ServiceDetailComponent} from './router-view/service-detail/service-detail.component';
+import {OrderListComponent} from './router-view/order-list/order-list.component'
 
 export const ROOT_ROUTES: Routes = [
     {
@@ -36,6 +39,18 @@ export const ROOT_ROUTES: Routes = [
     {
         path: 'tool/:id',
         component: ToolComponent
+    },
+    {
+        path: 'bookingService',
+        component: BookingServiceComponent
+    },
+    {
+        path: 'serviceDetail',
+        component: ServiceDetailComponent
+    },
+    {
+        path: 'orderList',
+        component: OrderListComponent
     },
     {
         path: '**',

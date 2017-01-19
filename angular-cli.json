@@ -23,6 +23,8 @@
         "./assets/css/sweetalert/sweetalert.css",
         "./assets/css/iCheck/custom.css",
         "./assets/css/datetimepicker/bootstrap-datetimepicker.min.css",
+        "./css/iconfont/iconfont.css",
+        "./css/projectIconfont/iconfont.css",
         "styles.scss"
       ],
       "scripts": [

@@ -1,5 +1,10 @@
-@import "../../controller/footer";
-@import "../../controller/server";
-@import "../../controller/nursing";
-@import "../../controller/header";
-@import "../../controller/home";
+@import '../serviceSubmitComponent';
+@import "../serviceDetailItemComponent";
+@import "../patientInfoCompoent";
+@import "../orderListItemComponent";
+@import "../homeToolComponent";
+@import "../footer";
+@import "../server";
+@import "../nursing";
+@import "../header";
+@import "../home";

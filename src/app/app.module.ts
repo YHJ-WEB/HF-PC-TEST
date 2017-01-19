@@ -14,8 +14,18 @@ import { ToolComponent } from './router-view/tool/tool.component';
 // import {FooterModule} from "./common-view/footer/footer.module";
 import {RouterModule} from '@angular/router';
 
-
-import {FooterComponent} from './common-view/footer/footer.component';
+import { BookingServiceComponent } from './router-view/booking-service/booking-service.component';
+import { ServiceDetailComponent } from './router-view/service-detail/service-detail.component';
+import { OrderListComponent } from './router-view/order-list/order-list.component';
+import { ServiceContentComponent } from './common-view/service-content/service-content.component';
+import { ServiceInfoComponent } from './common-view/service-info/service-info.component';
+import { ServiceSubmitComponent } from './common-view/service-submit/service-submit.component';
+import { ServiceDetailItemComponent } from './common-view/service-detail-item/service-detail-item.component';
+import { PatientInfoComponent } from './common-view/patient-info/patient-info.component';
+import { OrderListItemComponent } from './common-view/order-list-item/order-list-item.component';
+import { OrderInfoComponent } from './common-view/order-info/order-info.component';
+import { HomeToolComponent } from './common-view/home-tool/home-tool.component';
+import { FooterComponent } from './common-view/footer/footer.component';
 import { ServerComponent } from './router-view/home/server.component';
 import { NursingComponent } from './router-view/home/nursing.component';
 import { HeaderComponent } from './common-view/header/header.component';
@@ -30,6 +40,18 @@ import { SwiperComponent } from './common-view/swiper/swiper.component';
         ArticleItemComponent,
         ArticleComponent,
         ToolComponent,
+        BookingServiceComponent,
+        ServiceDetailComponent,
+        OrderListComponent,
+        ServiceContentComponent,
+        ServiceInfoComponent,
+        ServiceSubmitComponent,
+        ServiceDetailComponent,
+        ServiceDetailItemComponent,
+        PatientInfoComponent,
+        OrderListItemComponent,
+        OrderInfoComponent,
+        HomeToolComponent,
         FooterComponent,
         ServerComponent,
         NursingComponent,
