@@ -19,6 +19,26 @@
   }
 }
 
+.title3 {
+  @extend .padding-top-md, .overflow-line-1, .h2, .border-color-global-base;
+  color: map_get($fontColorMap, base) !important;
+  display: block;
+  line-height: remSize(30);
+  position: relative;
+  padding-left: map_get($paddingSizeMap,'md')*2;
+  //border-bottom: 1px solid;
+  &:before {
+    position: absolute;
+    left: 0;
+    width: 3px;
+    background-color: $mainColor;
+    content: ' ';
+    height: remSize(30);
+    display: block;
+    @extend .margin-right-sm;
+  }
+}
+
 .title1.more {
 
   &:after {
@@ -35,4 +55,10 @@
     float: right;
     @extend .h5, .font-color-global-lightest;
   }
+}
+
+.warpper {
+  width: 16rem;
+  margin-left: auto;
+  margin-right: auto;
 }
