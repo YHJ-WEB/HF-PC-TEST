@@ -1,13 +1,13 @@
-<div class="wapper margin-height-md padding-md background-color-white">
+<div class="warpper margin-height-md padding-md background-color-white">
   <h1 class="margin-bottom-md">{{toolDetail.title}}</h1>
   <div *ngFor="let question of toolDetail.questions; let qid = index;">
     <h3>{{question.title}}</h3>
-    <ul class="h3 margin-height-md">
-      <li class="inline-block {{aid==0? '': 'margin-left-md'}}" *ngFor="let answer of question.answers; let aid = index;">
+    <div class="h3 margin-height-md">
+      <div class="inline-block {{aid==0? '': 'margin-left-md'}}" *ngFor="let answer of question.answers; let aid = index;">
         <input type="radio" id="{{question.id}}" [checked]="aid==0" name="{{'qid_' + qid}}" [value]="answer.id">
         <label class="h3 padding-left-xs">{{answer.title}}</label>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
   <div class="text-center radius-md background-color-yellow btn-width padding-height-xs h4 font-color-white cursor-pointer" (click)="submitTool()">
     提交
