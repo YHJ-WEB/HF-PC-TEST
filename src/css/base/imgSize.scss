@@ -11,7 +11,7 @@ $imgSizeMap: (
 $sq: (
         "square":1,
         "oblong":1.5,
-        "banner":2.88
+        "banner":2.89
 ) !global;
 
 @each $name2, $imgSize in $imgSizeMap {
