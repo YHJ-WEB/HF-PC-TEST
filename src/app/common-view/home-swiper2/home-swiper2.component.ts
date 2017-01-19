@@ -1,16 +1,13 @@
-import { Component, OnInit ,AfterViewInit} from '@angular/core';
+import {Component, OnInit, AfterViewInit} from '@angular/core';
 
 @Component({
-  selector: 'app-swiper',
-  templateUrl: './swiper.component.html'
+  selector: 'app-home-swiper2',
+  templateUrl: './home-swiper2.component.html',
+  styleUrls: ['./home-swiper2.component.scss']
 })
-export class SwiperComponent implements OnInit ,AfterViewInit{
+export class HomeSwiper2Component implements AfterViewInit,OnInit {
 
   constructor() { }
-
-  ngOnInit() {
-
-  }
 
   ngAfterViewInit():void {
     let swap = new Swiper('.swap-list', {
@@ -23,4 +20,8 @@ export class SwiperComponent implements OnInit ,AfterViewInit{
     });
 
   }
+
+  ngOnInit() {
+  }
+
 }

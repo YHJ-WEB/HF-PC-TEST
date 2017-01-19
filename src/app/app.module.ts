@@ -26,10 +26,10 @@ import { OrderListItemComponent } from './common-view/order-list-item/order-list
 import { OrderInfoComponent } from './common-view/order-info/order-info.component';
 import { HomeToolComponent } from './common-view/home-tool/home-tool.component';
 import { FooterComponent } from './common-view/footer/footer.component';
-import { ServerComponent } from './router-view/home/server.component';
-import { NursingComponent } from './router-view/home/nursing.component';
 import { HeaderComponent } from './common-view/header/header.component';
-import { SwiperComponent } from './common-view/swiper/swiper.component';
+import { HomeCategoryComponent } from './common-view/home-category/home-category.component';
+import { HomeSwiper1Component } from './common-view/home-swiper1/home-swiper1.component';
+import { HomeSwiper2Component } from './common-view/home-swiper2/home-swiper2.component';
 
 @NgModule({
     declarations: [
@@ -53,10 +53,10 @@ import { SwiperComponent } from './common-view/swiper/swiper.component';
         OrderInfoComponent,
         HomeToolComponent,
         FooterComponent,
-        ServerComponent,
-        NursingComponent,
         HeaderComponent,
-        SwiperComponent
+        HomeCategoryComponent,
+        HomeSwiper1Component,
+        HomeSwiper2Component
     ],
     imports: [
         BrowserModule,
