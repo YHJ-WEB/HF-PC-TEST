@@ -1,0 +1,22 @@
+<div class="warpper margin-height-md padding-md background-color-white">
+    <div class="text-center">
+        <h1 class="">{{detailObj.title}}</h1>
+        <img src="{{detailObj.img1}}" class="article-detail-img1-width margin-height-md">
+        <img src="{{detailObj.img2}}" class="article-detail-img1-width">
+        <div class="padding-top-md" *ngFor="let item of detailObj.item">
+            <h2 class="font-color-global-green">{{item.title}}</h2>
+            <img src="{{item.img}}" class="article-detail-img2-width margin-height-md">
+            <p class="h5 text-center padding-height-md border-line-bottom border-color-global-base margin-re-width-md">{{item.desc}}</p>
+        </div>
+    </div>
+    <div class="margin-height-md">
+        <h2 class="font-color-global-green">结语</h2>
+        <p class="h5 padding-height-sm border-line-bottom border-color-global-base">{{detailObj.summary}}</p>
+    </div>
+    <div>
+        <h2 class="font-color-global-green">精彩推荐的其他康复计划</h2>
+        <ul class="margin-left-sm font-color-global-lighter margin-top-sm">
+            <li class="h4 cursor-pointer" *ngFor="let otherItem of detailObj.otherPush">{{otherItem.title}}</li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="warpper margin-height-md">
+  <div>
+    <h3 class="title2 margin-height-sm">健康资讯</h3>
+  </div>
+  <div class="clear-float">
+    <div *ngFor="let articleItem of articleArray; let i = index;" class="float-left {{ i%2 == 1? 'margin-left-md': ''}}">
+      <app-article-item [articleItem]="articleItem"></app-article-item>
+    </div>
+  </div>
+</div>
