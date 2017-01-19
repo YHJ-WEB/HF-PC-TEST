@@ -13,4 +13,7 @@ export class HeaderComponent implements OnInit {
 
   }
 
+  linkToTitleById(id: string): void {
+    $("html, body").animate({scrollTop:$("#"+id).offset().top}, 1000);
+  }
 }
