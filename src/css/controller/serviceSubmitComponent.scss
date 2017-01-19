@@ -1,0 +1,17 @@
+@charset "utf-8";
+.serviceSubmit {
+  .bannerImg {
+    width: remSize(480);
+    height: remSize(250)
+  }
+  .border-none {
+   border: none;
+  }
+  .submitButton{
+    width: remSize(100);
+    height: remSize(40);
+    margin-left: remSize(510);
+    vertical-align: center;
+    padding-top: remSize(10);
+  }
+}

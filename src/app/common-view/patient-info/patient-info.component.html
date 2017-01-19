@@ -1,0 +1,52 @@
+<div class="background-color-white patientInfoComponent">
+    <h3 class="font-color-global-base title1">服务详情</h3>
+    <div class="margin-left-md margin-top-sm padding-bottom-md">
+        <h4 class="font-color-global-base">
+            患者姓名：
+            <input id="name" name="address" style="width: 12em;height:0.45rem;" type="text" placeholder="请输入姓名"
+                   class="border-color-global-base radius-xs border-line h4 font-color-global-lighter padding-left-xs">
+        </h4>
+        <h4 class="font-color-global-base margin-top-sm">
+            患者性别：
+            <span class="font-color-global-lightest">
+                <input type="radio" name="sex" checked id="sex1" value="1">
+                <label for="sex1">男</label>
+            </span>
+            <span class="margin-left-sm font-color-global-lightest">
+                <input class="margin-left-sm" type="radio" name="sex" id="sex0" value="0">
+                <label for="sex0">女</label>
+            </span>
+            <!--<input id="sex" name="address" style="width: 20em;height:0.5rem;" type="text" placeholder="请输入服务地址"-->
+            <!--class="border-color-global-base radius-xs border-line h4 font-color-global-lighter padding-left-xs">-->
+        </h4>
+        <h4 class="font-color-global-base margin-top-sm">
+            患者年龄：
+            <input id="age" name="address" style="width: 12em;height:0.45rem;" type="text" placeholder="请输入年龄"
+                   class="border-color-global-base radius-xs border-line h4 font-color-global-lighter padding-left-xs">
+        </h4>
+        <h4 class="font-color-global-base margin-top-sm">
+            手机号码：
+            <input id="phone" name="address" style="width: 12em;height:0.45rem;" type="text" placeholder="请输入手机号码"
+                   class="border-color-global-base radius-xs border-line h4 font-color-global-lighter padding-left-xs">
+        </h4>
+        <h4 class="font-color-global-base margin-top-sm">
+            身份证号：
+            <input id="idNUm" name="address" style="width: 20em;height:0.45rem;" type="text" placeholder="请输入身份证号"
+                   class="border-color-global-base radius-xs border-line h4 font-color-global-lighter padding-left-xs">
+        </h4>
+        <h4 class="font-color-global-base margin-top-sm">
+            服务时间：
+            <input id="serviceDate" name="address" style="width: 12em;height:0.45rem;" type="text" placeholder="请选择服务时间"
+                   class="border-color-global-base radius-xs border-line h4 font-color-global-lighter padding-left-xs">
+        </h4>
+        <h4 class="font-color-global-base margin-top-sm">
+            服务地址：
+            <input id="serviceAddress" name="address" style="width: 20em;height:0.45rem;" type="text"
+                   placeholder="请输入服务地址"
+                   class="border-color-global-base radius-xs border-line h4 font-color-global-lighter padding-left-xs">
+        </h4>
+        <div class="background-color-yellow h3 submitButton margin-top-sm radius-sm text-center font-color-white" [routerLink]="['/orderList']">
+            立即预约
+        </div>
+    </div>
+</div>

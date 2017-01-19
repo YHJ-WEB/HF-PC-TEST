@@ -1,16 +1,16 @@
 @charset "utf-8";
-.title {
-  @extend .padding-md, .overflow-line-1, .h3, .border-color-global-base;
+.title1 {
+  @extend .padding-top-md, .overflow-line-1, .h2, .border-color-global-base;
   color: map_get($fontColorMap, base) !important;
   display: block;
   line-height: remSize(30);
   position: relative;
   padding-left: map_get($paddingSizeMap,'md')*2;
-  border-bottom: 1px solid;
+  //border-bottom: 1px solid;
   &:before {
     position: absolute;
     left: map_get($paddingSizeMap, 'md');
-    width: 2px;
+    width: 3px;
     background-color: $mainColor;
     content: ' ';
     height: remSize(30);
@@ -19,7 +19,7 @@
   }
 }
 
-.title.more {
+.title1.more {
   &:after {
     content: '更多\e600';
     font-family: projectIcon;
@@ -27,7 +27,7 @@
     @extend .h5, .font-color-global-lightest;
   }
 }
-.title.all {
+.title1.all {
   &:after {
     content: '查看全部\e600';
     font-family: projectIcon;
