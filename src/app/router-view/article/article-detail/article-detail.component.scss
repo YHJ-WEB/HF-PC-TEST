@@ -6,9 +6,6 @@
 .article-detail-img2-width {
   width: 8rem;
 }
-img {
-  vertical-align: middle;
-}
 
 li {
   list-style: disc;
@@ -16,5 +13,4 @@ li {
 }
 li:hover {
   color: map_get($fontColorMap, 'green');
-  cursor: pointer;
 }
