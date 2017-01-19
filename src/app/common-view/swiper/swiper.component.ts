@@ -16,7 +16,7 @@ export class SwiperComponent implements OnInit ,AfterViewInit{
     let swap = new Swiper('.swap-list', {
       pagination: '.swap-pagination',
       slidesPerView: 3,
-      // spaceBetween: 30,
+      spaceBetween: 30,
       loop: false,
       autoplay: 5000,
       paginationClickable: true
