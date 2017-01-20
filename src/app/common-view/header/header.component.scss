@@ -9,7 +9,7 @@
 }
 
 .margin-header-90 {
-  height: remSize(90);
+  height: remSize(120);
 }
 
 .header-fixed {
@@ -59,7 +59,7 @@
         text-align: center;
         &:hover, &.show {
           & .ol {
-            height: remSize(340) !important;
+            height: 4.6933rem !important;
           }
         }
         &:nth-of-type(1) {
@@ -72,6 +72,7 @@
       transition: height 0.6s;
       z-index: 1111;
       width: remSize(180);
+      top: 1px;
       .li {
         line-height: remSize(55);
         height: remSize(55);
@@ -79,7 +80,7 @@
           background-color: rgba(242, 243, 244, 0.8) !important;
           color: #000 !important;
           & .ul-list { //ul
-            width: remSize(200);
+            width: remSize(180);
             transition: width 0.6s;
             li {
               display: block;

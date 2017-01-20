@@ -20,7 +20,7 @@ export class HeaderComponent implements AfterViewInit,OnInit {
     ngAfterViewInit(): void {
         let vm = this;
         $(window).scroll(function () {
-            vm.scrollTop = $(this).scrollTop() > 400;
+            vm.scrollTop = $(this).scrollTop() > 420;
         })
     }
 
