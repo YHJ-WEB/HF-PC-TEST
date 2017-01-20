@@ -5,6 +5,8 @@
 /tmp
 **/app/**/*.css.map
 **/app/**/*.css
+**/app/**/**/*.css.map
+**/app/**/**/*.css
 # dependencies
 /node_modules/*
 !/node_modules/@types

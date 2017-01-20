@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import "../../../css/HFPCMainCss";
+
+.wappers {
+  .header-nav {
+    width: remSize(1200);
+    margin: 0 auto;
+  }
+}
+
+.margin-header-90 {
+  height: remSize(120);
+}
+
+.header-fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 20000;
+  .first-item-list {
+    //display: none;
+    height: 0;
+    .ol {
+      display: none;
+    }
+  }
+}
+
+.header {
+  height: remSize(61);
+  .header-content {
+    width: remSize(1200);
+    margin: 0 auto;
+    .all-service {
+      background: rgba(0, 186, 191, 1) !important;
+    }
+
+    .first-item-list {
+      height: 0;
+      background-color: rgba(0, 186, 191, 0.6);
+    }
+    .first-item-lists {
+      height: 4.6933rem;
+      background-color: rgba(0, 186, 191, 0.6);
+    }
+    .ul :hover .first-item-list {
+      height: 4.6933rem;
+      transition: height 0.6s;
+      .ol {
+        display: block;
+      }
+    }
+    .ul {
+      z-index: 1111;
+      li {
+        float: left;
+        width: remSize(180);
+        text-align: center;
+        &:hover, &.show {
+          & .ol {
+            height: 4.6933rem !important;
+          }
+        }
+        &:nth-of-type(1) {
+          color: white;
+        }
+      }
+    }
+    .ol {
+      position: relative;
+      transition: height 0.6s;
+      z-index: 1111;
+      width: remSize(180);
+      top: 1px;
+      .li {
+        line-height: remSize(55);
+        height: remSize(55);
+        &:hover {
+          background-color: rgba(242, 243, 244, 0.8) !important;
+          color: #000 !important;
+          & .ul-list { //ul
+            width: remSize(180);
+            transition: width 0.6s;
+            li {
+              display: block;
+              transition: width 0.6s;
+              color: #000;
+              &:hover {
+                color: rgba(0, 186, 191, 1);
+              }
+            }
+          }
+          p {
+            line-height: remSize(65);
+            color: #000 !important;
+          }
+        }
+        .ul-list {
+          background-color: rgba(238, 238, 238, 0.9) !important;
+          position: absolute;
+          top: 0;
+          left: remSize(180);
+          height: 4.67rem;
+          width: 0;
+          li {
+            display: none;
+          }
+        }
+        p {
+          line-height: remSize(55);
+        }
+      }
+    }
+  }
+}

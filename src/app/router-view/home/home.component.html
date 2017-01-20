@@ -1,0 +1,26 @@
+<div class="wapper h0">
+    <div class=" h0 banner">
+        <div class=" h0 clear-float">
+            <img class="float-left" src="../../../assets/img/banner.jpg">
+        </div>
+    </div>
+</div>
+<div>
+    <app-home-category></app-home-category>
+</div>
+<app-home-swiper1></app-home-swiper1>
+<app-home-swiper2></app-home-swiper2>
+<app-home-tool id="tool"></app-home-tool>
+<div class="wapper" id="article">
+    <div>
+        <h2 class="title2 margin-height-sm">健康资讯
+            <a routerLinkActive="active" routerLink="/article/article-list"
+               class="h5 float-right font-color-global-lighter padding-top-xs padding-right-md cursor-pointer">查看更多</a>
+        </h2>
+    </div>
+    <div class="clear-float">
+        <div *ngFor="let item of articleArray; let i = index;" class="float-left {{ i%2 == 1? 'margin-left-md': ''}}">
+            <app-article-item [articleItem]="item"></app-article-item>
+        </div>
+    </div>
+</div>

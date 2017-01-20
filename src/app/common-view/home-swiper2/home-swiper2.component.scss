@@ -1,0 +1,41 @@
+@charset "utf-8";
+@import "../../../css/HFPCMainCss";
+
+.nursing {
+  clear: both;
+  div {
+    width: remSize(1200);
+    position: relative;
+    ol {
+      position: absolute;
+      right: 0;
+      height: 0.4rem;
+      top: 1rem;
+      li {
+        float: left;
+        width: remSize(10);
+        height: remSize(10);
+        background: #ccc;
+        border-radius: 50%;
+      }
+    }
+  }
+  ul {
+    width: remSize(1200);
+    li {
+      float: left;
+      width: remSize(380) !important;
+      height: remSize(260);
+      background: white;
+      img {
+        width: remSize(380);
+      }
+      p {
+        width: remSize(360);
+      }
+    }
+  }
+  .nurse-width {
+    width: remSize(360);
+  }
+}

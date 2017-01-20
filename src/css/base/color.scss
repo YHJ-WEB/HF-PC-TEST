@@ -5,7 +5,8 @@ $baseColorMap: (
         "blue":#00A5DE,
         "purple":#9280E6,
         "pink":#FF799A,
-        "green":#00BD8F,
+        //"green":#00BD8F,
+        "green":#00BABF,
         "red":#FF585C,
         "yellow":#FFB938,
         "darkBlue":#5595EA,
@@ -17,7 +18,8 @@ $fontColorMap: (
         "base":#333,
         "lighter":#666,
         "lightest":#999,
-        "link":#577FA4
+        "link":#577FA4,
+        "green": #00BABF
 ) !global;
 $borderColorMap: (
         "base":#E8E8E8,

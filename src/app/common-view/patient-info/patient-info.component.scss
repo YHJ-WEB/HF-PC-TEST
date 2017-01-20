@@ -1,0 +1,11 @@
+@charset "utf-8";
+@import "../../../css/HFPCMainCss";
+
+.patientInfoComponent {
+  .submitButton {
+    width: remSize(100);
+    height: remSize(40);
+    vertical-align: center;
+    padding-top: remSize(10);
+  }
+}

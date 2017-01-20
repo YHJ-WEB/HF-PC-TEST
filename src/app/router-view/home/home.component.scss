@@ -1,0 +1,31 @@
+@charset "utf-8";
+@import "../../../css/HFPCMainCss";
+
+.wapper {
+  width: 16rem;
+  margin: 0 auto;
+}
+
+.banner {
+  width: remSize(870);
+  position: absolute;
+  margin-left: remSize(180);
+  z-index: 111;
+}
+
+.title2 {
+  color: map_get($fontColorMap, base) !important;
+  display: block;
+  line-height: remSize(30);
+  position: relative;
+  padding-left: map_get($paddingSizeMap, 'sm');
+  &:before {
+    position: absolute;
+    left: 0px;
+    width: 3px;
+    background-color: $mainColor;
+    content: ' ';
+    height: remSize(30);
+    display: block;
+  }
+}

@@ -1,0 +1,30 @@
+<div class="warpper serviceSubmit">
+    <div class="padding-height-md padding-width-md background-color-white clearFloat">
+        <img class="float-left radius-sm margin-right-md bannerImg" src="../../../assets/img/ht1.png"/>
+        <div>
+            <h2>
+                <span class="margin-right-sm font-color-global-base">上门尿道护理</span>
+                <span class="h4 font-color-green block iconfont">&#xe6fb;</span>
+                <span class="h4 font-color-green">耗时30分钟</span>
+            </h2>
+            <h4 class="font-color-global-lightest margin-top-sm">
+                服务价格:
+                <span class="font-color-yellow h3 margin-left-xs">89.00元</span>
+            </h4>
+            <h4 class="font-color-global-lightest margin-top-sm">
+                服务时间：
+                <input id="serviceTime" style="width: 12em;height:0.45rem;" type="text" placeholder="请选择时间"
+                       class="border-color-global-base radius-xs border-line h4 font-color-global-lighter padding-left-xs"
+                       readonly>
+            </h4>
+            <h4 class="font-color-global-lightest margin-top-sm">
+                服务地址：
+                <input id="address" name="address" style="width: 20em;height:0.45rem;" type="text" placeholder="请输入服务地址"
+                       class="border-color-global-base radius-xs border-line h4 font-color-global-lighter padding-left-xs">
+            </h4>
+            <div class="submitButton background-color-yellow font-color-white radius-sm h3 margin-top-sm text-center"
+                 [routerLink]="['/bookingService']">立即预约
+            </div>
+        </div>
+    </div>
+</div>

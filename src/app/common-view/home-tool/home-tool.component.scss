@@ -1,0 +1,51 @@
+@charset "utf-8";
+@import "../../../css/HFPCMainCss";
+
+.homeToolComponent {
+  clear: both;
+  div {
+    position: relative;
+    ol {
+      position: absolute;
+      right: remSize(30);
+      height: 0.4rem;
+      top: 0.6rem;
+      li {
+        float: left;
+        width: remSize(10);
+        height: remSize(10);
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .icon {
+    line-height: 1;
+    font-size: remSize(60);
+  }
+
+  .tool-item {
+    position: relative;
+    width:remSize(200);
+    .items {
+      display: none;
+      .items-title{
+        color: white;
+      }
+      .items-title:hover{
+        @extend .font-color-green;
+      }
+    }
+  }
+
+  .tool-item:hover .items {
+    display: block;
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(49,49,49, 0.9);
+  }
+}
