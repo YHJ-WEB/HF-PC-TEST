@@ -11,7 +11,7 @@
   display: block;
   line-height: remSize(30);
   position: relative;
-  padding-left: map_get($paddingSizeMap,'sm');
+  padding-left: map_get($paddingSizeMap, 'sm');
   &:before {
     position: absolute;
     left: 0px;

@@ -1,8 +1,12 @@
 @charset "utf-8";
 @import "../../../css/HFPCMainCss";
 
-.serviceContentComponent{
-  .content-height{
+.serviceContentComponent {
+  .content-height {
     height: remSize(60);
+  }
+  .icon {
+    line-height: 2;
+    font-size: remSize(30);
   }
 }

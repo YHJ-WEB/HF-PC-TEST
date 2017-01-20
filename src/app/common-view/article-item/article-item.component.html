@@ -4,7 +4,8 @@
         <div class="float-left article-detail margin-left-sm">
             <h3>{{articleItem.title}}</h3>
             <ul class="">
-                <li class="h4 margin-left-sm margin-top-xs cursor-pointer" *ngFor="let item of articleItem.items" routerLinkActive="active" (click)="routeToLink(item)">
+                <li class="h4 margin-left-sm margin-top-xs cursor-pointer" *ngFor="let item of articleItem.items"
+                    routerLinkActive="active" (click)="routeToLink(item)">
                     {{item.title}}
                 </li>
             </ul>

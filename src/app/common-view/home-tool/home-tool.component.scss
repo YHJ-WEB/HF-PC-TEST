@@ -26,13 +26,13 @@
 
   .tool-item {
     position: relative;
-    width:remSize(200);
+    width: remSize(200);
     .items {
       display: none;
-      .items-title{
+      .items-title {
         color: white;
       }
-      .items-title:hover{
+      .items-title:hover {
         color: #00BD8F;
       }
     }
@@ -46,6 +46,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(49,49,49, 0.9);
+    background: rgba(49, 49, 49, 0.9);
   }
 }
