@@ -19,6 +19,49 @@ export class HomeComponent implements AfterViewInit,OnInit {
         });
     }
 
+    articleArray = [
+        {
+            title: '脊柱疾病知识',
+            img: 'assets/img/jizhu001.png',
+            items: [
+                {
+                    id: 1,
+                    title: '脊柱结核'
+                },
+                {
+                    id: 2,
+                    title: '椎间盘突出'
+                },
+                {
+                    id: 3,
+                    title: '腰椎间盘突出'
+                },
+                {
+                    id: 4,
+                    title: '颈椎病'
+                }
+            ]
+        },
+        {
+            title: '康复锻炼',
+            img: 'assets/img/kangfuduanlian.png',
+            items: [
+                {
+                    id: 1,
+                    title: '颈托使用指导'
+                },
+                {
+                    id: 2,
+                    title: '下肢功能锻炼'
+                },
+                {
+                    id: 3,
+                    title: '颈部功能锻炼'
+                }
+            ]
+        }
+    ];
+
     ngOnInit(): void {
     }
 
