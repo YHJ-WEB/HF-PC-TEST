@@ -1,29 +1,32 @@
 <div class="warpper orderListComponent background-color-white padding-width-md">
-  <h3 class="padding-top-md padding-bottom-xs clearFloat">
-    <ul class="h4 clear-float text-center border-line-bottom border-color-global-heavyer">
-      <li class="float-left {{orderStatus=='all' || !orderStatus?'border-line-bottom-green font-color-green':''}}"
-          (click)="orderStatus='all'" >
-        <div class="margin-top-xs margin-bottom-sm title-width">全部订单</div>
-      </li>
-      <li class="float-left {{orderStatus=='serving'?'border-line-bottom-green font-color-green':''}}"
-          (click)="orderStatus='serving'">
-        <div class="margin-top-xs margin-bottom-sm border-line-left border-color-global-base title-width">进行中</div>
-      </li>
-      <li class="float-left {{orderStatus=='refund'?'border-line-bottom-green font-color-green':''}}"
-          (click)="orderStatus='refund'">
-        <div class="margin-top-xs margin-bottom-sm border-line-left border-color-global-base title-width">退款中</div>
-      </li>
-      <li class="float-left {{orderStatus=='finish'?'border-line-bottom-green font-color-green':''}}"
-          (click)="orderStatus='finish'">
-        <div class="margin-top-xs margin-bottom-sm border-line-left border-color-global-base title-width">已完成</div>
-      </li>
-    </ul>
-  </h3>
-  <h3 class="background-color-global-lighter padding-height-xs padding-left-xs margin-bottom-sm">
-    <span class="inline-block font-color-global-base order-tilte1 h4">服务名称</span>
-    <span class="inline-block font-color-global-base order-tilte2 h4">订单状态</span>
-    <span class="inline-block font-color-global-base order-tilte3 h4">支付金额</span>
-    <span class="inline-block font-color-global-base order-tilte4 h4">操作</span>
-  </h3>
-  <app-order-info></app-order-info>
+    <h3 class="padding-top-md padding-bottom-xs clearFloat">
+        <ul class="h4 clear-float text-center border-line-bottom border-color-global-heavyer">
+            <li class="float-left {{orderStatus=='all' || !orderStatus?'border-line-bottom-green font-color-green':''}}"
+                (click)="orderStatus='all'">
+                <div class="margin-top-xs margin-bottom-sm title-width">全部订单</div>
+            </li>
+            <li class="float-left {{orderStatus=='serving'?'border-line-bottom-green font-color-green':''}}"
+                (click)="orderStatus='serving'">
+                <div class="margin-top-xs margin-bottom-sm border-line-left border-color-global-base title-width">进行中
+                </div>
+            </li>
+            <li class="float-left {{orderStatus=='refund'?'border-line-bottom-green font-color-green':''}}"
+                (click)="orderStatus='refund'">
+                <div class="margin-top-xs margin-bottom-sm border-line-left border-color-global-base title-width">退款中
+                </div>
+            </li>
+            <li class="float-left {{orderStatus=='finish'?'border-line-bottom-green font-color-green':''}}"
+                (click)="orderStatus='finish'">
+                <div class="margin-top-xs margin-bottom-sm border-line-left border-color-global-base title-width">已完成
+                </div>
+            </li>
+        </ul>
+    </h3>
+    <h3 class="background-color-global-lighter padding-height-xs padding-left-xs margin-bottom-sm">
+        <span class="inline-block font-color-global-base order-tilte1 h4">服务名称</span>
+        <span class="inline-block font-color-global-base order-tilte2 h4">订单状态</span>
+        <span class="inline-block font-color-global-base order-tilte3 h4">支付金额</span>
+        <span class="inline-block font-color-global-base order-tilte4 h4">操作</span>
+    </h3>
+    <app-order-info></app-order-info>
 </div>

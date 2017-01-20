@@ -9,6 +9,7 @@
 .article-detail-img1-width {
   width: 12rem;
 }
+
 .article-detail-img2-width {
   width: 8rem;
 }
@@ -17,6 +18,7 @@ li {
   list-style: disc;
   line-height: 1.6 !important;
 }
+
 li:hover {
   color: map_get($fontColorMap, 'green');
 }

@@ -33,7 +33,7 @@
         color: white;
       }
       .items-title:hover{
-        color: #00BD8F;
+        @extend .font-color-green;
       }
     }
   }

@@ -9,8 +9,15 @@
   }
   ul {
     li {
-      width: 30%;
+      width: 33.3%;
       float: left;
+      span{
+        width: remSize(80);
+        height: remSize(80);
+        line-height: remSize(80);
+        font-size: 0.46667rem;
+        box-sizing: border-box;
+      }
       h2{
         font-weight: bold;
       }
@@ -19,4 +26,5 @@
       }
     }
   }
+
 }

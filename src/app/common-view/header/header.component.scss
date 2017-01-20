@@ -1,13 +1,14 @@
 @charset "utf-8";
 @import "../../../css/HFPCMainCss";
-.wappers{
-  .header-nav{
-    width:remSize(1200);
+
+.wappers {
+  .header-nav {
+    width: remSize(1200);
     margin: 0 auto;
   }
 }
 
-.place-holder {
+.margin-header-90 {
   height: remSize(90);
 }
 
@@ -17,10 +18,10 @@
   right: 0;
   top: 0;
   z-index: 20000;
-  .first-item-list{
+  .first-item-list {
     //display: none;
-    height:0;
-    .ol{
+    height: 0;
+    .ol {
       display: none;
     }
   }
@@ -35,21 +36,18 @@
       background: rgba(0, 186, 191, 1) !important;
     }
 
-    .first-item-list{
-      height:0;
+    .first-item-list {
+      height: 0;
       background-color: rgba(0, 186, 191, 0.6);
-      //display: none;
     }
-    .first-item-lists{
+    .first-item-lists {
       height: 4.6933rem;
       background-color: rgba(0, 186, 191, 0.6);
-      //display: none;
     }
-    .ul :hover .first-item-list{
-      //display: block;
+    .ul :hover .first-item-list {
       height: 4.6933rem;
       transition: height 0.6s;
-      .ol{
+      .ol {
         display: block;
       }
     }
@@ -115,8 +113,4 @@
       }
     }
   }
-  //.first-item-list {
-  //
-  //}
-
 }

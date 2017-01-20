@@ -1,21 +1,24 @@
 @charset "utf-8";
 @import "../../../css/HFPCMainCss";
-.wapper{
+
+.wapper {
   width: 16rem;
-  margin:0 auto;
+  margin: 0 auto;
 }
+
 .banner {
   width: remSize(870);
   position: absolute;
   margin-left: remSize(200);
   z-index: 111;
 }
+
 .title2 {
   color: map_get($fontColorMap, base) !important;
   display: block;
   line-height: remSize(30);
   position: relative;
-  padding-left: map_get($paddingSizeMap,'sm');
+  padding-left: map_get($paddingSizeMap, 'sm');
   &:before {
     position: absolute;
     left: 0px;

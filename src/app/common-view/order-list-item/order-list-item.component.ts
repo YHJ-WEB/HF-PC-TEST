@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-order-list-item',
-  templateUrl: './order-list-item.component.html',
-  styleUrls: ['./order-list-item.component.scss']
+    selector: 'app-order-list-item',
+    templateUrl: './order-list-item.component.html',
+    styleUrls: ['./order-list-item.component.scss']
 })
 export class OrderListItemComponent implements OnInit {
 
-  constructor() { }
+    constructor() {
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
 
 }

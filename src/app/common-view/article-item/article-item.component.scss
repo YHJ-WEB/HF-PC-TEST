@@ -9,9 +9,11 @@
     width: 2.5rem;
   }
 }
+
 li {
   list-style: disc;
 }
+
 li:hover {
   color: map_get($fontColorMap, 'green');
 }
