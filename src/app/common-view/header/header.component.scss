@@ -26,14 +26,12 @@
   }
 }
 
-
 .header {
   height: remSize(61);
   .header-content {
     width: remSize(1200);
     margin: 0 auto;
     .all-service {
-      //z-index: 1111;
       background: rgba(0, 186, 191, 1) !important;
     }
 
@@ -106,8 +104,6 @@
           top: 0;
           left: remSize(200);
           height: 4.6933rem;
-          //background: #ccc;
-          //overflow: hidden;
           width: 0;
           li {
             display: none;

@@ -24,7 +24,7 @@
     width:remSize(1200);
     li{
       float: left;
-      width:remSize(380);
+      width:remSize(380) !important;
       height:remSize(260);
       background: white;
       img{

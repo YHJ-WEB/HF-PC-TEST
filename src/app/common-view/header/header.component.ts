@@ -1,5 +1,5 @@
 import {Component, OnInit, Input, AfterViewInit} from '@angular/core';
-
+import {Router, NavigationEnd} from '@angular/router';
 @Component({
     selector: 'app-header',
     templateUrl: './header.component.html',
@@ -10,14 +10,11 @@ export class HeaderComponent implements AfterViewInit,OnInit {
     @Input() isHome: boolean;
     private scrollTop: boolean = false;
 
-    constructor() {
+    constructor(private router: Router) {
     }
 
     ngOnInit() {
         console.log(this.isHome);
-        $(window).scroll(function () {
-            this.scrollTop = $(this).scrollTop() > 400;
-        })
     }
 
     ngAfterViewInit(): void {
@@ -27,6 +24,16 @@ export class HeaderComponent implements AfterViewInit,OnInit {
     }
 
     linkToTitleById(id: string): void {
-        $("html, body").animate({scrollTop: $("#" + id).offset().top}, 1000);
+        let idLen = $("#" + id).length;
+        if (idLen == 0) {
+            this.router.events.subscribe((event) => {
+                if (event instanceof NavigationEnd) {
+                    this.router.navigate(["/home"]);
+                    $("html, body").animate({scrollTop: $("#" + id).offset().top}, 500);
+                }
+            });
+        } else {
+            $("html, body").animate({scrollTop: $("#" + id).offset().top}, 500);
+        }
     }
 }

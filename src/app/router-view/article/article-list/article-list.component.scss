@@ -9,16 +9,16 @@
 .title2 {
   color: map_get($fontColorMap, base) !important;
   display: block;
-  line-height: remSize(20);
+  line-height: remSize(30);
   position: relative;
   padding-left: map_get($paddingSizeMap,'sm');
   &:before {
     position: absolute;
     left: 0px;
-    width: 2px;
+    width: 3px;
     background-color: $mainColor;
     content: ' ';
-    height: remSize(20);
+    height: remSize(30);
     display: block;
   }
 }
