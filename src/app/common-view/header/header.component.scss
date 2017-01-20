@@ -55,7 +55,7 @@
       z-index: 1111;
       li {
         float: left;
-        width: remSize(200);
+        width: remSize(180);
         text-align: center;
         &:hover, &.show {
           & .ol {
@@ -71,11 +71,10 @@
       position: relative;
       transition: height 0.6s;
       z-index: 1111;
-      //overflow: hidden;
-      width: remSize(200);
+      width: remSize(180);
       .li {
-        line-height: remSize(65);
-        height: remSize(65);
+        line-height: remSize(55);
+        height: remSize(55);
         &:hover {
           background-color: rgba(242, 243, 244, 0.8) !important;
           color: #000 !important;
@@ -100,15 +99,15 @@
           background-color: rgba(238, 238, 238, 0.9) !important;
           position: absolute;
           top: 0;
-          left: remSize(200);
-          height: 4.6933rem;
+          left: remSize(180);
+          height: 4.67rem;
           width: 0;
           li {
             display: none;
           }
         }
         p {
-          line-height: remSize(65);
+          line-height: remSize(55);
         }
       }
     }
