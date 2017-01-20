@@ -27,12 +27,13 @@ export class HeaderComponent implements AfterViewInit,OnInit {
     linkToTitleById(id: string): void {
         let idLen = $("#" + id).length;
         if (idLen == 0) {
-            this.router.events.subscribe((event) => {
+            let link = this.router.events.subscribe((event) => {
                 if (event instanceof NavigationEnd) {
-                    this.router.navigate(["/home"]);
+                    link.unsubscribe();
                     $("html, body").animate({scrollTop: $("#" + id).offset().top}, 500);
                 }
             });
+            this.router.navigate(["/home"]);
         } else {
             $("html, body").animate({scrollTop: $("#" + id).offset().top}, 500);
         }
