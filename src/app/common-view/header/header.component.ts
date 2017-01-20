@@ -1,29 +1,40 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input, AfterViewInit} from '@angular/core';
 import {Router, NavigationEnd} from '@angular/router';
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+    selector: 'app-header',
+    templateUrl: './header.component.html',
+    styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements AfterViewInit,OnInit {
 
-  constructor(private router: Router) { }
+    @Input() isHome: boolean;
+    private scrollTop: boolean = false;
 
-  ngOnInit() {
-
-  }
-
-  linkToTitleById(id: string): void {
-    let idLen = $("#"+ id).length;
-    if (idLen == 0) {
-      this.router.events.subscribe((event) => {
-        if (event instanceof NavigationEnd) {
-          this.router.navigate(["/home"]);
-          $("html, body").animate({scrollTop: $("#" + id).offset().top}, 500);
-        }
-      });
-    } else {
-      $("html, body").animate({scrollTop: $("#" + id).offset().top}, 500);
+    constructor(private router: Router) {
     }
-  }
+
+    ngOnInit() {
+        console.log(this.isHome);
+    }
+
+    ngAfterViewInit(): void {
+        let vm = this;
+        $(window).scroll(function () {
+            vm.scrollTop = $(this).scrollTop() > 400;
+        })
+    }
+
+    linkToTitleById(id: string): void {
+        let idLen = $("#" + id).length;
+        if (idLen == 0) {
+            this.router.events.subscribe((event) => {
+                if (event instanceof NavigationEnd) {
+                    this.router.navigate(["/home"]);
+                    $("html, body").animate({scrollTop: $("#" + id).offset().top}, 500);
+                }
+            });
+        } else {
+            $("html, body").animate({scrollTop: $("#" + id).offset().top}, 500);
+        }
+    }
 }
