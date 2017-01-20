@@ -7,8 +7,23 @@
   }
 }
 
-.header-fixed{
+.place-holder {
+  height: remSize(90);
+}
+
+.header-fixed {
   position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 20000;
+  .first-item-list{
+    //display: none;
+    height:0;
+    .ol{
+      display: none;
+    }
+  }
 }
 
 
@@ -20,6 +35,25 @@
     .all-service {
       //z-index: 1111;
       background: rgba(0, 186, 191, 1) !important;
+    }
+
+    .first-item-list{
+      height:0;
+      background-color: rgba(0, 186, 191, 0.6);
+      //display: none;
+    }
+    .first-item-lists{
+      height: 4.6933rem;
+      background-color: rgba(0, 186, 191, 0.6);
+      //display: none;
+    }
+    .ul :hover .first-item-list{
+      //display: block;
+      height: 4.6933rem;
+      transition: height 0.6s;
+      .ol{
+        display: block;
+      }
     }
     .ul {
       z-index: 1111;
@@ -39,7 +73,7 @@
     }
     .ol {
       position: relative;
-      transition: height 0.2s;
+      transition: height 0.6s;
       z-index: 1111;
       //overflow: hidden;
       width: remSize(200);
@@ -51,10 +85,10 @@
           color: #000 !important;
           & .ul-list { //ul
             width: remSize(200);
-            transition: width 0.2s;
+            transition: width 0.6s;
             li {
               display: block;
-              transition: width 0.2s;
+              transition: width 0.6s;
               color: #000;
               &:hover {
                 color: rgba(0, 186, 191, 1);
@@ -85,9 +119,8 @@
       }
     }
   }
-  .first-item-list {
-    height: 4.6933rem;
-    background-color: rgba(0, 186, 191, 0.6);
-  }
+  //.first-item-list {
+  //
+  //}
 
 }

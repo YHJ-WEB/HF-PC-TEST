@@ -11,7 +11,7 @@ import {Router, NavigationEnd} from "@angular/router";
 export class AppComponent implements OnInit,AfterViewInit{
 
   constructor(private router: Router){}
-  private url: string;
+  private isHome: boolean;
 
   ngAfterViewInit():void {
     function resizeHtmlFont() {
@@ -28,6 +28,7 @@ export class AppComponent implements OnInit,AfterViewInit{
     this.router.events.subscribe((event) => {
       if ((event instanceof NavigationEnd)) {
         document.body.scrollTop = 0;
+        this.isHome = this.router.url == '/home';
       }
     })
   }

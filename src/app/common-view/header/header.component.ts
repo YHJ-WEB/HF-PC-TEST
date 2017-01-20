@@ -1,19 +1,32 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input, AfterViewInit} from '@angular/core';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+    selector: 'app-header',
+    templateUrl: './header.component.html',
+    styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements AfterViewInit,OnInit {
 
-  constructor() { }
+    @Input() isHome: boolean;
+    private scrollTop: boolean = false;
 
-  ngOnInit() {
+    constructor() {
+    }
 
-  }
+    ngOnInit() {
+        console.log(this.isHome);
+        $(window).scroll(function () {
+            this.scrollTop = $(this).scrollTop() > 400;
+        })
+    }
 
-  linkToTitleById(id: string): void {
-    $("html, body").animate({scrollTop:$("#"+id).offset().top}, 1000);
-  }
+    ngAfterViewInit(): void {
+        $(window).scroll(function () {
+            this.scrollTop = $(this).scrollTop() > 400;
+        })
+    }
+
+    linkToTitleById(id: string): void {
+        $("html, body").animate({scrollTop: $("#" + id).offset().top}, 1000);
+    }
 }
