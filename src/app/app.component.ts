@@ -1,4 +1,4 @@
-import {Component, AfterViewInit, OnInit} from '@angular/core';
+import {Component, AfterViewInit, OnInit, ElementRef} from '@angular/core';
 import {Router, NavigationEnd} from "@angular/router";
 
 
@@ -10,7 +10,7 @@ import {Router, NavigationEnd} from "@angular/router";
 
 export class AppComponent implements OnInit,AfterViewInit{
 
-  constructor(private router: Router){}
+  constructor(private router: Router, private element: ElementRef){}
   private isHome: boolean;
 
   ngAfterViewInit():void {
