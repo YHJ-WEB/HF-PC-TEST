@@ -3,7 +3,7 @@
         <div class="h5 header-nav">
             <span class="text-left font-color-white">张三，你好！当前登录时间：2016/08/10 星期三</span>
             <a class="float-right font-color-white margin-left-sm">退出登录</a>
-            <a class="float-right font-color-white margin-left-sm">我的订单</a>
+            <a class="float-right font-color-white margin-left-sm" [routerLink]="['/orderList']">我的订单</a>
             <span class="float-right font-color-white pointer font-hover-underline">张三</span>
         </div>
     </div>
@@ -21,51 +21,51 @@
                                 <div><p class="float-left padding-left-sm h5 font-color-white">尿管胃管</p><span
                                         class="float-right padding-right-sm">&#xe649;</span></div>
                                 <ul class="ul-list" style="margin-top: 2px;">
-                                    <li>伤口护理</li>
-                                    <li>导尿【自备物品】</li>
-                                    <li>导尿玩儿推【自备物品】</li>
+                                    <li [routerLink]="['/serviceDetail']">伤口护理</li>
+                                    <li [routerLink]="['/serviceDetail']">导尿【自备物品】</li>
+                                    <li [routerLink]="['/serviceDetail']">导尿玩儿推【自备物品】</li>
                                 </ul>
                             </li>
                             <li class="li">
                                 <div><p class="float-left padding-left-sm h5 font-color-white">伤口、造口</p><span
                                         class="float-right padding-right-sm">&#xe649;</span></div>
                                 <ul class="ul-list" style="margin-top: 2px;">
-                                    <li>新生儿护理</li>
-                                    <li>导尿【自备物品】</li>
-                                    <li>导尿【自备物品】</li>
+                                    <li [routerLink]="['/serviceDetail']">新生儿护理</li>
+                                    <li [routerLink]="['/serviceDetail']">导尿【自备物品】</li>
+                                    <li [routerLink]="['/serviceDetail']">导尿【自备物品】</li>
                                 </ul>
                             </li>
                             <li class="li">
                                 <div><p class="float-left padding-left-sm h5 font-color-white">新生儿护理</p><span
                                         class="float-right padding-right-sm">&#xe649;</span></div>
                                 <ul class="ul-list" style="margin-top: 2px;">
-                                    <li>按摩护理</li>
-                                    <li>导尿【自备物品】</li>
-                                    <li>导尿【自备物品】</li>
+                                    <li [routerLink]="['/serviceDetail']">按摩护理</li>
+                                    <li [routerLink]="['/serviceDetail']">导尿【自备物品】</li>
+                                    <li [routerLink]="['/serviceDetail']">导尿【自备物品】</li>
                                 </ul>
                             </li>
                             <li class="li">
                                 <div><p class="float-left padding-left-sm h5 font-color-white">中老年护理</p><span
                                         class="float-right padding-right-sm">&#xe649;</span></div>
                                 <ul class="ul-list" style="margin-top: 2px;">
-                                    <li>导尿【自备物品】</li>
-                                    <li>导尿【自备物品】</li>
-                                    <li>导尿【自备物品】</li>
+                                    <li [routerLink]="['/serviceDetail']">导尿【自备物品】</li>
+                                    <li [routerLink]="['/serviceDetail']">导尿【自备物品】</li>
+                                    <li [routerLink]="['/serviceDetail']">导尿【自备物品】</li>
                                 </ul>
                             </li>
                             <li class="li">
                                 <div><p class="float-left padding-left-sm h5 font-color-white">血糖测定</p><span
                                         class="float-right padding-right-sm">&#xe649;</span></div>
                                 <ul class="ul-list" style="margin-top: 2px;">
-                                    <li>中老年血糖测定</li>
-                                    <li>导尿【自备物品】</li>
-                                    <li>导尿【自备物品】</li>
+                                    <li [routerLink]="['/serviceDetail']">中老年血糖测定</li>
+                                    <li [routerLink]="['/serviceDetail']">导尿【自备物品】</li>
+                                    <li [routerLink]="['/serviceDetail']">导尿【自备物品】</li>
                                 </ul>
                             </li>
                         </ol>
                     </div>
                 </li>
-                <li class="padding-height-sm cursor-pointer" (click)="linkToTitleById('article')">健康咨询</li>
+                <li class="padding-height-sm cursor-pointer" (click)="linkToTitleById('article')">健康资讯</li>
                 <li class="padding-height-sm cursor-pointer" (click)="linkToTitleById('tool')">健康评估</li>
             </ul>
             <div class="float-right h0 margin-top-xs"><img src="../../../assets/img/logo_youhujia.png"></div>
